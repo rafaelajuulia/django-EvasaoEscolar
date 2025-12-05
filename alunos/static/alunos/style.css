@@ -1,0 +1,158 @@
+/* ====== NAVBAR ====== */
+.navbar {
+    width: 96%;
+    background: #000;
+    color: white;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* ====== TITULOS ====== */
+h1 {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 36px;
+}
+
+/* ====== BOTÃO NOVO ====== */
+.novo-btn {
+    display: block;
+    background: black;
+    color: white;
+    border-radius: 80px;
+    text-align: center;
+    margin: 15px auto 30px;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.novo-btn:hover {
+    text-decoration: underline;
+}
+
+/* ====== TABELA ====== */
+.table-container {
+    display: flex;
+
+    justify-content:center;
+   
+    
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    text-align: center;
+    background: #000;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+}
+
+td {
+    text-align: center;
+    justify-content: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+td a {
+    margin-right: 20px;
+}
+
+.delete {
+    color: red;
+}
+
+/* ====== FORMULÁRIO ====== */
+.form-container {
+    max-width: 600px;
+    background: white;
+    padding: 25px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 12px;
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+/* Grupo dos radios */
+.radio-group {
+    margin: 20px 0;
+}
+
+.radio-group label {
+    
+    display: flex;
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 3px;
+    margin-right: 530px;
+    justify-content:center;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* ====== VOLTAR ====== */
+.back {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}

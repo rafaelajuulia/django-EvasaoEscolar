@@ -1,0 +1,42 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'alunos/style.css' %}">
+
+<div class="navbar">
+    <div class="logo">Sistema Escolar</div>
+    <div class="menu">
+        <a href="{% url 'cadastrar_aluno' %}">Cadastrar</a>
+    </div>
+</div>
+
+<h1>Lista de Alunos</h1>
+<a href="{% url 'cadastrar_aluno' %}" class="novo-btn">+ Novo Aluno</a>
+
+<div class="table-container">
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Idade</th>
+            <th>Série</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for aluno in alunos %}
+        <tr>
+            <td>{{ aluno.nome }}</td>
+            <td>{{ aluno.email }}</td>
+            <td>{{ aluno.idade }}</td>
+            <td>{{ aluno.serie }}</td>
+            <td>
+                <a href="{% url 'editar_aluno' aluno.id %}">Editar</a>
+                <a href="{% url 'excluir_aluno' aluno.id %}" class="delete">Excluir</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>

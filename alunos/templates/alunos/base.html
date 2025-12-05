@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sistema{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'alunos/style.css' %}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">Sistema Escolar</h2>
+        <div>
+            <a href="{% url 'cadastrar_aluno' %}">Cadastrar</a>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>
